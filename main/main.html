@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="main_style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <button class="profile-btn" id="profileButton">Профиль</button>
+      <img
+        src="../res/defolt_icon_profile.png"
+        class="profile-icon"
+        id="profileIcon"
+        alt="Профиль"
+      />
+    </div>
+
+    <div class="scroll-area">
+      <button class="menu-button" id="selectQuestionnaireBtn">
+        <b>Выбрать анкету</b> <span class="arrow">▼</span>
+      </button>
+      <div class="collapsible-section" id="selectQuestionnaireSection">
+        <button class="survey-button" data-type="cervix">Шейка матки</button>
+        <button class="survey-button" data-type="uterine_body">Тело матки</button>
+        <button class="survey-button" data-type="ovaries">Яичники</button>
+        <button class="survey-button" data-type="mammary_glands">Молочные железы</button>
+      </div>
+
+      <button class="menu-button" id="aboutAppBtn">
+        <b>О приложении</b> <span class="arrow">▼</span>
+      </button>
+      <div class="collapsible-section" id="aboutAppSection">
+        <p class="collapsible-text">
+          Приложенеие &quot;Симптом-чекер &quot; разработа для оценки
+          вероятности развития рака репродокутивных органов. Результаты
+          анкетирования носят рекомендательный характер и выдаются исключитено
+          на основании введённых Вами данных. Результаты анкетироования не
+          должны считаться официальным диагнозом или заменять посещение врача.
+        </p>
+      </div>
+
+      <button class="menu-button" id="supportBtn">
+        <b>Поддержка</b> <span class="arrow">▼</span>
+      </button>
+      <div class="collapsible-section" id="supportSection">
+        <p class="collapsible-text">
+          При обнаружении проблем в работе приложения сообщите об этом на нашу
+          почту:
+          <span class="email" id="email">example@mail.com</span>
+        </p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>

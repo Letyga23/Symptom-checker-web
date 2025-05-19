@@ -1,0 +1,134 @@
+/* Основные стили */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Верхняя панель */
+
+.top-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px 16px 6px 6px; /* marginTop 16dp аналог */
+  gap: 10px;
+  background-color: transparent;
+  box-sizing: border-box;
+}
+
+.profile-btn {
+  background: transparent;
+  border: none;
+  font-size: 16px;
+  text-transform: none;
+  cursor: pointer;
+  padding: 0 16px 0 0;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+/* Скролл и контейнер с кнопками */
+
+.scroll-area {
+  overflow-y: auto;
+  height: calc(100vh - 102px); /* 70px + 16px + padding */
+  padding: 0 16px 16px 16px;
+  box-sizing: border-box;
+}
+
+/* Кнопки меню (MenuButtonStyle) */
+
+.menu-button {
+  width: 100%;
+  background-color: #DAE8FC; 
+  border: none;
+  text-align: left;
+  padding: 12px 16px;
+  font-size: 16px;
+  margin-top: 24px;
+  cursor: pointer;
+  position: relative;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  user-select: none;
+}
+
+/* Убираем стрелку из span, тк используем фон для иконки (если хотите) */
+/* Можно оставить, если хотите динамически менять */
+
+.menu-button .arrow {
+  font-size: 14px;
+  user-select: none;
+  margin-left: 10px;
+}
+
+.menu-button.active {
+  background-color: #D8DBDF;
+}
+
+/* Раскрывающиеся секции (CollapsibleSection) */
+
+.collapsible-section {
+  display: none;
+  background-color: #D8DBDF; 
+  margin-top: -10px;
+  padding: 12px 0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  flex-direction: column;
+  gap: 12px;
+}
+
+
+/* Кнопки внутри секций (ButtonStyle) */
+
+.survey-button {
+  width: calc(100% - 200px);
+  margin: 0 auto;
+  background-color: #FA2500; 
+  border: none;
+  padding: 10px 0;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  user-select: none;
+  display: block;
+  text-align: center;
+}
+
+/* Текст внутри collapsible секций (CollapsibleSectionText) */
+
+.collapsible-text {
+  margin: 0 12px;
+  font-size: 14px;
+  color: #000;
+  line-height: 1.4;
+}
+
+/* Email с кликабельностью */
+
+.email {
+  text-align: center;
+  color: blue;
+  cursor: pointer;
+  margin: 8px 12px;
+  user-select: all;
+  font-size: 14px;
+}
